@@ -1,3 +1,4 @@
+{% comment %} {% extends 'base.html' %} {% block content%} {% endcomment %}
 {% load static %}
 
 <!-- Main header start -->
@@ -18,24 +19,24 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cars.html">
+                        <a class="nav-link" href="{% url 'cars' %}">
                             Cars
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/carhouse/about.html">
+                        <a class="nav-link" href="{% url 'about' %}">
                             About
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">
+                        <a class="nav-link" href="{% url 'services' %}">
                             Services
                         </a>
                     </li>
                     
                     
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                     </li>
                     <li class="nav-item dropdown m-hide">
                         <a href="#full-page-search" class="nav-link h-icon">
@@ -48,4 +49,6 @@
     </div>
 </header>
 <!-- Main header end -->
+
+{% comment %} {% endblock %} {% endcomment %}
 
