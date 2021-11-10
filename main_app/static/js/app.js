@@ -240,7 +240,7 @@ $(function () {
     $( function() {
         // Add background image
         //$.backstretch('../img/nature.jpg');
-        var endDate = "December  27, 2019 15:03:25";
+        var endDate = "December  27, 2021 15:03:25";
         $('.countdown.simple').countdown({ date: endDate });
         $('.countdown.styled').countdown({
             date: endDate,
