@@ -108,7 +108,10 @@ $(function () {
                     $('.sticky-header').addClass('header-shrink');
                 }
                 if($('.do-sticky').length < 1) {
-                    $('.company-logo img').attr('src', 'static/img/logos/black-logo.png');
+                    $(".company-logo img").attr(
+                      "src",
+                      "static/img/logos/Mota.NG.png"
+                    );
                 }
             }
             else {
@@ -116,20 +119,17 @@ $(function () {
                 if($('.do-sticky').length < 1 && $('.fixed-header').length == 0 && $('.fixed-header2').length == 0) {
                     $(".company-logo img").attr(
                       "src",
-                      "static/img/logos/logo.png"
+                      "static/img/logos/Mota.NG.png"
                     );
                 } else {
                     $(".company-logo img").attr(
                       "src",
-                      "static/img/logos/black-logo.png"
+                      "static/img/logos/Mota.NG.png"
                     );
                 }
             }
         } else {
-            $(".company-logo img").attr(
-              "src",
-              "static/img/logos/black-logo.png"
-            );
+            $(".company-logo img").attr("src", "static/img/logos/Mota.NG.png");
         }
     }
 
@@ -237,7 +237,7 @@ $(function () {
     $( function() {
         // Add background image
         //$.backstretch('../img/nature.jpg');
-        var endDate = "December  27, 2019 15:03:25";
+        var endDate = "December  27, 2021 15:03:25";
         $('.countdown.simple').countdown({ date: endDate });
         $('.countdown.styled').countdown({
             date: endDate,
