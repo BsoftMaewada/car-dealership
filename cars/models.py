@@ -139,5 +139,9 @@ class Car(models.Model):
     vin = models.CharField(max_length=255)
     created_date = models.DateField(default=datetime.now, blank=True)
     
+    
+    def __str__(self):
+        return self.car_title
+    
 
 
