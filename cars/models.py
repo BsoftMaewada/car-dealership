@@ -111,6 +111,11 @@ class Car(models.Model):
         ('6', '6'),
     )
     
+    fuel_choices = (
+        ('Gas', 'Gas'),
+        ('Electric', 'Electric'),
+    )
+    
     car_title = models.CharField(max_length=255)
     state = models.CharField(choices=state_choices, max_length=255)
     city = models.CharField(max_length=255)
@@ -132,7 +137,7 @@ class Car(models.Model):
     transmission = models.CharField(max_length=255)
     interior = models.CharField(max_length=255)
     mileage = models.IntegerField()
-    fuel_type = models.CharField(max_length=50)
+    fuel_type = models.CharField(choices=fuel_choices, max_length=50)
     doors = models.CharField(choices=door_choices, max_length=10)
     no_of_owners = models.CharField(max_length=255)
     is_feature = models.BooleanField(default=False)
