@@ -110,7 +110,7 @@ $(function () {
                 if($('.do-sticky').length < 1) {
                     $(".company-logo img").attr(
                       "src",
-                      "static/img/logos/Mota.NG.png"
+                      "../static/img/logos/Mota.NG.png"
                     );
                 }
             }
@@ -119,17 +119,17 @@ $(function () {
                 if($('.do-sticky').length < 1 && $('.fixed-header').length == 0 && $('.fixed-header2').length == 0) {
                     $(".company-logo img").attr(
                       "src",
-                      "static/img/logos/Mota.NG.png"
+                      "../static/img/logos/Mota.NG.png"
                     );
                 } else {
                     $(".company-logo img").attr(
                       "src",
-                      "static/img/logos/Mota.NG.png"
+                      "../static/img/logos/Mota.NG.png"
                     );
                 }
             }
         } else {
-            $(".company-logo img").attr("src", "static/img/logos/Mota.NG.png");
+            $(".company-logo img").attr("src", "../static/img/logos/Mota.NG.png");
         }
     }
 
@@ -488,3 +488,7 @@ $(function () {
         }
     }).trigger("resize");
 })(jQuery);
+
+setTimeout(function () {
+    $('message').fadeOut('slow');
+}, 4000)
