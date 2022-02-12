@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'car_dealership.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'carDealership_db',
+        'NAME': 'carsdealership',
         'USER': 'postgres',
         'PASSWORD': '0419',
         'HOST': 'localhost',
