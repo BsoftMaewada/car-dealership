@@ -20,6 +20,9 @@ To make migration changes
     $ python manage.py makemigrations
     $ python manage.py migrate
 
+To create static files
+ $ python manage.py collectstatic
+ 
 ### `Starting the project`
     $ pipenv shell
     $ python manage.py runserver 
