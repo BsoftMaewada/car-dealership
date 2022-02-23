@@ -2,8 +2,9 @@ from django.db import models
 from datetime import datetime
 from ckeditor.fields import RichTextField
 from multiselectfield import MultiSelectField
+from django.utils.timezone import now
 
-# Create your models here.
+# To create car models we need:
 #car_title
 # city
 # state
@@ -136,13 +137,15 @@ class Car(models.Model):
     engine = models.CharField(max_length=255)
     transmission = models.CharField(max_length=255)
     interior = models.CharField(max_length=255)
+    miles = models.IntegerField()
+    passengers = models.IntegerField()
     mileage = models.IntegerField()
     fuel_type = models.CharField(choices=fuel_choices, max_length=50)
     doors = models.CharField(choices=door_choices, max_length=10)
     no_of_owners = models.CharField(max_length=255)
     is_feature = models.BooleanField(default=False)
     vin = models.CharField(max_length=255)
-    created_date = models.DateField(default=datetime.now, blank=True)
+    created_date = models.DateTimeField(default=datetime.now, null=True, blank=True)
     
     
     def __str__(self):
